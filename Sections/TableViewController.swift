@@ -86,11 +86,11 @@ class TableViewController: UITableViewController {
         case let .basic(title):
             print("did select basic cell:", title)
         case let .rightDetail(title, _):
-            print("did select basic rightDetail:", title)
+            print("did select rightDetail:", title)
         case let .leftDetail(title, _):
-            print("did select basic leftDetail:", title)
+            print("did select leftDetail:", title)
         case let .subtitle(title, _):
-            print("did select basic subtitle:", title)
+            print("did select subtitle:", title)
 
         }
     }
@@ -104,11 +104,11 @@ class TableViewController: UITableViewController {
         case .basic:
             return 44
         case .rightDetail:
-            return 66
+            return 44 * 1.5
         case .leftDetail:
-            return 88
+            return 44 * 2
         case .subtitle:
-            return 132
+            return 44 * 2.5
             
         }
     }
